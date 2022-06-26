@@ -1,10 +1,17 @@
-import { Atom } from "./components/atoms/atom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import GlobalStyle from "./styles/globalStyles";
+import Triple from "./pages/Triple";
 
 function App() {
   return (
     <>
-      <div>hi</div>
-      <Atom />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Triple />} />
+        </Routes>
+      </BrowserRouter>
+      <GlobalStyle />
     </>
   );
 }
