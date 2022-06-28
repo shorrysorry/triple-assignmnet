@@ -1,11 +1,13 @@
 const fonts = {
   size: {
-    m: "16px",
+    countNumber: "36px",
+    byDate: "15px",
+    awards: "14px",
   } as const,
-  weight: {
-    light: 400,
-    normal: 500,
-    bold: 700,
+  color: {
+    gray: "rgba(58,58,58,1)",
+    gray700: "rgba(58,58,58,0.7)",
+    gray800: "rgba(58,58,58,0.8)",
   } as const,
 };
 
