@@ -8,8 +8,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    }
+  }
+
+  body {
+    font-family: sans-serif;
+  }
 
 `;
 
