@@ -3,14 +3,14 @@ import { ThemeProvider } from "styled-components";
 
 import GlobalStyle from "./styles/globalStyles";
 import theme from "./styles/theme";
-import Triple from "./pages/Triple";
+import Main from "./pages/Main";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Triple />} />
+          <Route path="/" element={<Main />} />
         </Routes>
       </BrowserRouter>
       <GlobalStyle />

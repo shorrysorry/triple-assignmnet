@@ -32,15 +32,13 @@
 #### 3-1. ATOMS
 
 > - 최소한의 1개의 기능을 하는 단위
-> - 일반적으로, 'HTML TAG' 를 컴포넌트의 이름으로 한다.
-> - 필요하다면, '기능 + HTML TAG'를 이름으로 한다.
->   <br/>
->   ex) Btn, Input, ConfirmBtn
+> - '컴포넌트의 기능'을 이름으로 한다.
 
 #### 3-2. MOLECULES
 
 > - 하나의 컴포넌츠에서 2개 이상의 기능을 하는 단위
-> - '컴포넌트의 기능'을 이름으로 한다.
+> - 혹은 하나의 기능 + UI 표현을 위한 텍스트 등
+> - '컴포넌트의 기능' 혹은 'UI적 요소 정의'를 이름으로 한다.
 
 #### 3-3. ORGANISMS
 
@@ -74,8 +72,8 @@
 ```JSX
 // INTERFACE
 // FUNCTION
-// COMPONENT
 // STYLED-COMPONENT
+// COMPONENT
 ```
 
 ### 2. CSS 표기 순서
