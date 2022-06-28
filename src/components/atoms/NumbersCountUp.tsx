@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-interface NumberCountProps {
+interface NumbersCountUpProps {
   number: number;
 }
 
-export default function NumberCountUp({ number }: NumberCountProps) {
+export default function NumbersCountUp({ number }: NumbersCountUpProps) {
   const [num, setNum] = useState(0);
 
   const intervalFunction = () => {
@@ -36,5 +36,5 @@ export default function NumberCountUp({ number }: NumberCountProps) {
 
   useEffect(() => intervalFunction, []);
 
-  return <div>{num}</div>;
+  return <span>{num}</span>;
 }
