@@ -13,4 +13,6 @@ const fonts = {
 
 const theme = { fonts };
 
+export type Theme = typeof theme;
+
 export default theme;
