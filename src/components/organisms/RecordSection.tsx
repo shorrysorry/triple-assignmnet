@@ -26,12 +26,12 @@ const BigTripleImageDiv = styled.div`
     width: 400px;
     height: 338px;
     padding-top: 280px;
-    text-align: center;
-    font-size: ${theme.fonts.size.byDate};
-    color: ${theme.fonts.color.gray700};
     background-size: 400px 338px;
     background-image: url(${require("../../assets/images/triple2x.png")});
     background-repeat: no-repeat;
+    text-align: center;
+    font-size: ${theme.fonts.size.byDate};
+    color: ${theme.fonts.color.gray700};
     opacity: 0;
     animation: ${fadeIn} 700ms ease-in-out forwards;
   `}

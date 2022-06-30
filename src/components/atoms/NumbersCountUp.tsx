@@ -7,17 +7,22 @@ interface NumbersCountUpProps {
 export default function NumbersCountUp({ number }: NumbersCountUpProps) {
   const [num, setNum] = useState(0);
 
-  const intervalFunction = () => {
+  useEffect(() => {
     let start = 0;
     const end = number;
+
+    const lastSpeed = 100;
+    const midSpeed = (1000 - lastSpeed) / 45;
+    const first = 1000 / (end - 50) / 10;
+    const firstSpeed = first > 1 ? first : (1 * 1000) / end;
 
     let countingUp = setInterval(() => {
       start += 10;
       setNum(start);
-      if (start >= end - 10) {
+      if (start >= end - 50) {
         clearInterval(countingUp);
         countingUp = setInterval(() => {
-          start += 5;
+          start += 1;
           setNum(start);
           if (start >= end - 5) {
             clearInterval(countingUp);
@@ -27,14 +32,12 @@ export default function NumbersCountUp({ number }: NumbersCountUpProps) {
               if (start === end) {
                 clearInterval(countingUp);
               }
-            }, 150);
+            }, lastSpeed);
           }
-        }, 50);
+        }, midSpeed);
       }
-    }, 1200 / (end - 10));
-  };
-
-  useEffect(() => intervalFunction, []);
+    }, firstSpeed);
+  }, [number]);
 
   return <span>{num}</span>;
 }
