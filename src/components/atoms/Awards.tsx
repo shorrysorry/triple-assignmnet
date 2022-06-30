@@ -7,7 +7,9 @@ interface AwardsProps {
 
 const AwardsDiv = styled.div<AwardsProps>`
   ${({ theme, imgUrl }) => css`
+    display: inline-block;
     height: 54px;
+    margin: 50px 39px 0px 0px;
     padding: 5px 0px 5px 62px;
     background-size: 54px 54px;
     background-image: url(${imgUrl});
